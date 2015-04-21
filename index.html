@@ -7,12 +7,13 @@
 <p id="demo"></p>
 
 <script>
-var text = '{"name":"Krambo","Card":"101010010","PIN":"5555"}'
+var text = '{"name":"Krambo","card":"101010010","pin":"5555"}'
 
 var obj = JSON.parse(text);
 
 document.getElementById("demo").innerHTML =
 obj.name + "<br>" +
+"PIN: " +
 obj.pin + "<br>";
 </script>
 
