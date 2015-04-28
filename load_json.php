@@ -1,7 +1,8 @@
 <?php 
         echo '<p>Hello World</p>'; 
         
-        $Test_data = $POST[""];
-        echo 'Here it is ' . $Test_data
+        // read JSon input
+        $data_back = json_decode(file_get_contents('php://input'));
+        echo 'Here it is ' . $data_back;
 
 ?>
